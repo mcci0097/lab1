@@ -29,7 +29,7 @@ namespace WebApplication1.Controllers
         [HttpGet("{id}", Name = "Get")]
             public IActionResult Get(int id)
             {
-                var existing = context.Products.FirstOrDefault(flower => flower.Id == id);
+                var existing = context.Products.FirstOrDefault(product => product.Id == id);
                 if (existing == null)
                 {
                     return NotFound();
