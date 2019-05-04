@@ -70,7 +70,7 @@ namespace WebApplication1.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var existing = Context.Products.FirstOrDefault(flower => flower.Id == id);
+            var existing = Context.Products.FirstOrDefault(product => product.Id == id);
             if (existing == null)
             {
                 return NotFound();
