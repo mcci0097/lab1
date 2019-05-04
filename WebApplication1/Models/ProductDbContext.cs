@@ -10,7 +10,7 @@ namespace WebApplication1.Models
     {
 
         public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options)
-        { 
+        {
         }
         public DbSet<Product> Products { get; set; }
 
